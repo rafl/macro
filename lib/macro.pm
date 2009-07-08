@@ -19,7 +19,7 @@ sub setup_for {
     my ($class, $setup_class, %macros) = @_;
 
     install_sub({
-        code => sub () {},
+        code => sub () { 0 },
         into => $setup_class,
         as   => $_,
     }) for keys %macros;
